@@ -1,31 +1,31 @@
 #include "Enemy.h"
 #include <stdio.h>
 
-void Enemy::approach()//Ú‹ß
+void Enemy::approach()//æŽ¥è¿‘
 {
-	printf("“G‚ªÚ‹ß\n\n");
-	printf("1‚Ü‚½‚Í2‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B1‚ð“ü—Í‚µ‚½ê‡AŽŸ‚Öi‚Ý‚Ü‚·B\n");
+	printf("æ•µãŒæŽ¥è¿‘\n\n");
+	printf("1ã¾ãŸã¯2ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚1ã‚’å…¥åŠ›ã—ãŸå ´åˆã€æ¬¡ã¸é€²ã¿ã¾ã™ã€‚\n");
 	scanf_s("%d", &a);
 	if (a == 1) {
-		index++;
+	ã€€ã€€index++;
 	}
 }
 
-void Enemy::shooting()//ŽËŒ‚
+void Enemy::shooting()//å°„æ’ƒ
 {
-	printf("“G‚ªŽËŒ‚\n\n");
-	printf("2‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B\n");
+	printf("æ•µãŒå°„æ’ƒ\n\n");
+	printf("2ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚\n");
 	scanf_s("%d", &b);
 	if (b == 2) {
-		index++;
+ã€€ã€€ã€€ã€€ã€€ã€€index++;
 	}
 }
 
-void Enemy::withdrawal()//—£’E
+void Enemy::withdrawal()//é›¢è„±
 {
-	printf("“G‚ª—£’E\n");
+	printf("æ•µãŒé›¢è„±\n");
 	if (index == 1) {
-		index++;
+	ã€€ã€€index++;
 	}
 }
 
@@ -37,7 +37,7 @@ void(Enemy::* Enemy::table[])() = {
 
 };
 
-void Enemy::Update()//ƒAƒbƒvƒf[ƒg(XV)
+void Enemy::Update()//ã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆ(æ›´æ–°)
 {
 	(this->*table[index])();
 }
