@@ -14,7 +14,7 @@ void Enemy::approach()//Ú‹ß
 void Enemy::shooting()//ËŒ‚
 {
 	printf("“G‚ªËŒ‚\n\n");
-	printf("2‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B2‚ğ“ü—Í‚µ‚½ê‡AŸ‚Öi‚İ‚Ü‚·B\n");
+	printf("2‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B\n");
 	scanf_s("%d", &b);
 	if (b == 2) {
 		index++;
@@ -23,7 +23,7 @@ void Enemy::shooting()//ËŒ‚
 
 void Enemy::withdrawal()//—£’E
 {
-	printf("“G‚ª—£’E");
+	printf("“G‚ª—£’E\n");
 	if (index == 1) {
 		index++;
 	}
