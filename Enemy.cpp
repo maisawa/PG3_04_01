@@ -9,9 +9,7 @@ void Enemy::approach()//接近
 	if (a == 1) {
 		index++;
 	}
-
 }
-
 
 void Enemy::shooting()//射撃
 {
@@ -29,8 +27,6 @@ void Enemy::withdrawal()//離脱
 	if (index == 1) {
 		index++;
 	}
-
-
 }
 
 void(Enemy::* Enemy::table[])() = {
@@ -41,7 +37,7 @@ void(Enemy::* Enemy::table[])() = {
 
 };
 
-void Enemy::Update()//アップデート
+void Enemy::Update()//アップデート(更新)
 {
 	(this->*table[index])();
 }

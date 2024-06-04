@@ -11,6 +11,7 @@ public://メンバ関数
 	void Update();//アップデート(更新)
 
 private://メンバ変数
+
 	int index = 0;
 	int a = 0;//入力用の変数名その１
 	int b = 0;//入力用の変数名その２
